@@ -1,13 +1,14 @@
 import React from "react";
 import styles from "./Nav.module.css";
+import {Link} from "react-router-dom";
 
 const Nav = () => {
     return(
         <nav>
-            <h1 className={styles.heading}>React Router</h1>
+            <Link to="/" className={styles.Link}><h1 className={styles.heading}>React Router</h1></Link>
             <ul>
-                <li>About</li>
-                <li>Contact</li>
+                <Link to="/about" className={styles.Link}><li>About</li></Link>
+                <Link to="/contact" className={styles.Link}><li>Contact</li></Link>
             </ul>
         </nav>
     );
