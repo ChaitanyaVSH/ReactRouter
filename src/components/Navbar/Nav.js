@@ -7,7 +7,7 @@ const Nav = () => {
         <nav>
             <Link to="/" className={styles.Link}><h1 className={styles.heading}>React Router</h1></Link>
             <ul>
-                <Link to="/about" className={styles.Link}><li>About</li></Link>
+                <Link to="/shop" className={styles.Link}><li>Shop</li></Link>
                 <Link to="/contact" className={styles.Link}><li>Contact</li></Link>
             </ul>
         </nav>
