@@ -1,0 +1,14 @@
+.title {
+  display: block;
+  text-align: center;
+  border: 1px solid #ad1457;
+  border-radius: 8px;
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 60%;
+}
+
+.title:hover {
+  background-color: #ad1457;
+  color: white;
+}

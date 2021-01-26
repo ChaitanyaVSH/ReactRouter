@@ -1,4 +1,5 @@
 import React , {useState, useEffect}from "react";
+import {Link} from "react-router-dom";
 import styles from "./About.module.css";
 
 const About = () => {
@@ -27,7 +28,10 @@ const About = () => {
 
     return(
         <div>
-            <h1>This is the shop page</h1>
+            {items.map((item, idx)=>(
+                <h3><Link key={idx} className={styles.title} to={`/shop/${item.id}`}>{item.title}</Link></h3>
+                // <h3 key={idx} className={styles.title}>{item.title}</h3>
+            ))}
         </div>
     );
 }

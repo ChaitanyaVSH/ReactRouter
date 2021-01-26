@@ -1,0 +1,13 @@
+.itemDetail {
+  text-align: center;
+  border: 1px solid #ad1457;
+  border-radius: 8px;
+  margin: 5rem auto;
+  width: 60%;
+  height: auto;
+}
+
+.itemTitle {
+  border-bottom: 1px dashed black;
+  padding-bottom: 50px;
+}

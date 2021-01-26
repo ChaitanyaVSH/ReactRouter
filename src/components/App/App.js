@@ -5,6 +5,7 @@ import Contact from "../Contact/Contact";
 import Nav from "../Navbar/Nav";
 import styles from "./App.module.css";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import ItemDetails from "../ItemDetails/ItemDetails";
 
 
 const App = () => {
@@ -15,7 +16,8 @@ const App = () => {
 
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/shop" component={About}/>
+          <Route exact path="/shop" component={About}/>
+          <Route path="/shop/:id" component={ItemDetails}/>
           <Route path="/contact" component={Contact}/>
         </Switch>
         
