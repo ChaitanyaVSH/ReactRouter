@@ -1,15 +1,15 @@
 import React, {useState, useEffect}from "react";
-import Spinner from 'react-bootstrap/Spinner'
 import styles from "./ItemDetails.module.css";
-
 
 const ItemDetails  = (props) => {
 
     const [item, setItem] = useState({loading: true});
 
     useEffect(()=>{
+        // https://stackoverflow.com/questions/55840294/how-to-fix-missing-dependency-warning-when-using-useeffect-react-hook
+        // react-hooks exhaustive deps issues
         fetchItem();
-    },[]);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     const fetchItem = async () => {
 
@@ -25,6 +25,7 @@ const ItemDetails  = (props) => {
             title: data.title,
             body: data.body
         })
+        console.log(data)
 
 
         // const URL = "https://developers.zomato.com/api/v2.1/categories";
@@ -38,7 +39,8 @@ const ItemDetails  = (props) => {
         // data = await data.json();
         // console.log(data)
 
-    }
+    };
+
     return(
         <div className={styles.itemDetail}>
             <h1 className={styles.itemTitle}>{item.title}</h1>

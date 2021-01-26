@@ -9,6 +9,7 @@ const Nav = () => {
             <ul>
                 <Link to="/shop" className={styles.Link}><li>Shop</li></Link>
                 <Link to="/contact" className={styles.Link}><li>Contact</li></Link>
+                <Link to="/categories" className={styles.Link}><li>Categories</li></Link>
             </ul>
         </nav>
     );

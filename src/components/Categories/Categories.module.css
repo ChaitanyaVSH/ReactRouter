@@ -1,0 +1,34 @@
+.categoriesContainer {
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.categoriesTitle {
+  /*
+    * To place the text in the middle of the div
+    https://stackoverflow.com/questions/5703552/how-can-i-center-text-horizontally-and-vertically-inside-a-div-block
+  */
+  vertical-align: middle;
+  line-height: 100px;
+  margin: 4rem 0;
+  height: 100px;
+}
+
+.categoryName {
+  display: inline-block;
+  border: 1px solid red;
+  border-radius: 8px;
+  margin: 1.2rem 0.5rem;
+  padding: 0.5rem 2rem;
+}
+
+.categoryName:hover {
+  background-color: #ad1457;
+  color: white;
+}
+
+.widgetwrap {
+  width: auto;
+  height: auto;
+}
